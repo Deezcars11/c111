@@ -1,0 +1,71 @@
+
+<html>
+  <head>
+    <title>Hand Jesture Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <center>
+        <h3 class="btn btn-warning heading">Hand Jesture to EMOJI
+          <br>
+          <span>&#128067;</span>
+          <span>&#128077;</span>
+          <span>&#128079;</span>
+          <span>&#129304;</span>
+          <span>&#9994;</span>
+          <span>&#9996;</span>
+        </h3>
+        <br>
+        <br>
+        <p style="font-size: 22px;"> Take your selfie of the jesture to know its meaning
+        
+        </p>
+        <p>On the following Jestures the model is trained-</p>
+        <p style="font-size: 30px;"> &#128076;   | &#128077; | &#9996; </p>
+        <p style="font-size: 30px;"> &#128076; | &#128077; | &#9996; </p>
+        
+        <div>
+          <label>webcam view- </label>
+          <div id="camera"></div>
+          <br>
+          <br>
+      
+<buttion class="btn btn-warning" onclick="take_snapshot()">Capture Image</buttion>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Perdiction </label>
+  <p class="object_name" id="result_object_name"></p>
+  <p class="icon" id="result_object_gesture_icon"></p>
+  
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Snashot -</label>
+  <div id="result"></div>
+  <br>
+  <button onclick="check()" class="btn btn-infor">Predict Gesture</button>
+</div>
+      </center>
+      </div>
+     
+<script src="main.js"></script>
+  </body>
+</html>
+
+https://teachablemachine.withgoogle.com/models/1LJJqS7JD/ 
+its for JS
+
+
+
+
+
+
+ 
+
